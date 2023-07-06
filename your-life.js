@@ -142,7 +142,12 @@
   }
 
   function _loadStoredValueOfDOB() {
-    var DOB = JSON.parse(localStorage.getItem('DOB'));
+    // var DOB = JSON.parse(localStorage.getItem('DOB'));
+    var DOB = {
+      month: 3,
+      year: 1997,
+      day: 4
+    }
 
     if (!DOB) {
       return;
